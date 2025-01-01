@@ -1,6 +1,26 @@
 package SongNest.auth_service.model;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-public enum Role {
-    USER,
-    ADMIN
+@Entity
+public class Role {
+    @Id
+    private String roleName;
+    private String roleDescription;
+
+    public String getRoleName() {
+        return roleName;
+    }
+
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
+    }
+
+    public String getRoleDescription() {
+        return roleDescription;
+    }
+
+    public void setRoleDescription(String roleDescription) {
+        this.roleDescription = roleDescription;
+    }
 }
