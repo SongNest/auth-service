@@ -1,5 +1,4 @@
 package SongNest.auth_service.model;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
